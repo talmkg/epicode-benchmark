@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@300;400;500;600;800&display=swap");
+:root {
+  min-width: 30rem;
+}
+body,
+html {
+  color: white;
+  position: relative;
+  height: 100%;
+  background: url(./assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+}
+.header {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  block-size: 2.5rem;
+  top: 2rem;
+  left: 40rem;
+  position: left;
+}
+.container {
+  position: relative;
+  top: 10rem;
+}
+.toptext h4 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  color: white;
+  top: 10rem;
+}
+.results {
+  position: relative;
+  top: 12rem;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.correct {
+  justify-content: left;
+  font-weight: 400;
+  display: inline-block;
+  text-align: left;
+}
+.wrong {
+  font-weight: 400;
+  text-align: right;
+  display: inline-block;
+  opacity: 0.6;
+}
+#circle {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  width: 250px;
+}
+.cyantext {
+  color: cyan;
+}
+.results h4 {
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.results h4 {
+  font-size: 23px;
+  margin: 0;
+}
+.results p {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+.btn {
+  font-size: 2rem;
+  padding: 0.8rem 2rem;
+  width: 200px;
+  height: auto;
+  margin-top: rem;
+  top: 18rem;
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: 2px solid white;
+  transition: 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #07d6dd91;
+  transition: transform 150ms;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+.results h2 {
+  margin: 0;
+  padding: 0;
+}
+.questiongotcorrect {
+  font-weight: 250;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.questionsgotwrong {
+  font-weight: 250;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+/*            MOBILE & PC VIEW - RESPONSIVE SIDE          */
+
+@media only screen and (max-width: 600px) {
+}
