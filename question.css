@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@200;400;600&display=swap");
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+#main-container {
+  margin-inline: auto;
+  max-width: 100%;
+  /* background-image: url(./assets/bg.jpg); */
+  padding-block: 90px;
+  padding-inline: 40px;
+}
+
+#top-section img {
+  width: 200px;
+  margin-inline: auto;
+}
+
+#top-section {
+  margin-inline: auto;
+  height: 150px;
+  width: 1045px;
+}
+
+#timer {
+  position: relative;
+  left: 90%;
+  /* transform: translateY(-159%); */
+  border: solid 15px aqua;
+  width: 100px;
+  text-align: center;
+  height: 100px;
+  top: -85px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#bottom-section {
+  margin-inline: auto;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+
+#question-title {
+  font-size: 4.4em;
+  margin-block-end: 50px;
+  margin-block-start: 60px;
+  width: 801px;
+  margin-inline: auto;
+  font-family: "Outfit", sans-serif;
+}
+
+.options {
+  width: 500px;
+  height: 90px;
+  /* border-radius: 50px; */
+  text-align: center;
+  font-size: 1.2em;
+  /* border: solid 1px white; */
+  /* background: transparent; */
+  /* opacity: 0.4; */
+  color: white;
+  margin-inline: 20px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 70px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(11.3px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin-inline-start: 0;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+#option1 {
+  margin-block-end: 40px;
+}
+#option2 {
+  margin-inline-end: 0;
+  margin-block-end: 40px;
+}
+#option4 {
+  margin-inline-end: 0;
+}
+#answers-section {
+  width: 1045px;
+  /* border: solid; */
+  margin-inline: auto;
+  margin-block-start: 100px;
+}
+
+#top-line {
+  display: inline-block;
+  /* margin: 37px; */
+}
+#bottom-line {
+  display: inline-block;
+  /* margin: 37px; */
+}
+
+#question-counter {
+  margin-inline: auto;
+  margin-block-start: 150px;
+  margin-block-end: 20px;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+#light {
+  font-weight: 100;
+}
+
+#bold {
+  font-weight: bold;
+}
+.total-question {
+  color: #d20094;
+}
+
+.options:hover {
+  background: linear-gradient(0deg, #900080, #d20094);
+  /* transition: 3s; */
+}
+.options:active {
+  background: linear-gradient(0deg, #900080, #d20094);
+  transition: 3s;
+}
