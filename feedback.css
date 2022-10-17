@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@200;400;600&display=swap");
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  font-family: "Outfit", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+}
+#main-container {
+  margin-inline: auto;
+  max-width: 100%;
+  /* background-image: url(./assets/bg.jpg); */
+  padding-block: 90px;
+  padding-inline: 40px;
+}
+
+#top-section {
+  width: 400px;
+  margin-inline-start: 200px;
+}
+#top-section img {
+  width: 200px;
+  margin-inline: auto;
+}
+
+#bottom-section {
+  color: white;
+  margin-inline: auto;
+  width: 820px;
+
+  text-align: center;
+  margin-block: 100px;
+  margin-block-start: 170px;
+}
+
+#title {
+  font-size: 4em;
+  font-weight: 600;
+  margin-block-end: 40px;
+}
+#title-description {
+  font-size: 2em;
+  margin-block-end: 30px;
+  width: 815px;
+  margin-inline: auto;
+}
+
+#stars {
+  margin-block: 60px;
+  margin-inline: auto;
+}
+
+#feedback {
+  font-size: 2em;
+  margin-block-end: 30px;
+  margin-inline: auto;
+}
+
+input {
+  width: 830px;
+  margin-block-end: 40px;
+  background: none;
+  border: none;
+  border-bottom: solid 2px #900080;
+  height: 30px;
+  outline: none;
+  color: white;
+  font-size: 1.2em;
+  padding-inline-start: 31px;
+  padding-block-end: 10px;
+}
+
+#button button {
+  width: 240px;
+  height: 80px;
+  font-size: 1.5em;
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  background-color: #00ffff;
+  margin-block-start: 40px;
+}
+
+#form {
+  width: 900px;
+}
