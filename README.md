@@ -1,1 +1,1 @@
-# epicode-benchmark
+# Epicode Benchmark
