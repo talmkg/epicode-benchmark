@@ -11,7 +11,7 @@ body {
   width: 100%;
 }
 #topcontainer {
-  margin-left: 10%;
+  margin-left: 20%;
   width: 39%;
 }
 #epicode {
@@ -46,4 +46,50 @@ ul {
   font-weight: 300;
   font-size: 12pt;
   line-height: 1.5;
+  margin-bottom: 3em;
+}
+#info-container {
+  width: 60%;
+  margin-right: auto;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+label > span {
+  margin-left: 0.5em;
+}
+button {
+  background-color: #00ffff;
+  border: none;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  font-weight: 700;
+  font-size: 18pt;
+}
+
+/* I think that the button has a box shadow after the box is checked... for now, it's on hover*/
+button:hover {
+  box-shadow: #00ffff 0px 0px 20px;
+}
+/*trying to style the checkbox...*/
+label > input[type="checkbox"] {
+  display: none;
+}
+label > input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: solid 1.5pt #e7e7eb;
+}
+
+label > input[type="checkbox"]:checked + *::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "✓";
+  color: white;
+  text-align: center;
 }
