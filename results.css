@@ -18,15 +18,14 @@ html {
   position: relative;
 }
 .logo {
-  position: absolute;
+  position: relative;
   block-size: 2.5rem;
-  top: 2rem;
-  left: 40rem;
-  position: left;
+  bottom: 4rem;
+  right: 25rem;
 }
 .container {
   position: relative;
-  top: 10rem;
+  top: 6rem;
 }
 .toptext h4 {
   padding: 0;
@@ -39,10 +38,11 @@ html {
 }
 .results {
   position: relative;
-  top: 12rem;
+  top: 5rem;
   font-size: 30px;
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 .correct {
   justify-content: left;
@@ -57,9 +57,19 @@ html {
   opacity: 0.6;
 }
 #circle {
+  background-color: transparent;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 275px;
+  width: 275px;
+  border: 50px solid rgb(0, 238, 255);
   margin-left: 10rem;
   margin-right: 10rem;
-  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .cyantext {
   color: cyan;
@@ -75,7 +85,6 @@ html {
   margin: 0;
 }
 .results p {
-  position: relative;
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 300;
@@ -85,8 +94,7 @@ html {
   padding: 0.8rem 2rem;
   width: 200px;
   height: auto;
-  margin-top: rem;
-  top: 18rem;
+  top: 15rem;
   position: relative;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -106,16 +114,22 @@ html {
   padding: 0;
 }
 .questiongotcorrect {
-  font-weight: 250;
+  font-size: 19px;
+  font-weight: 200;
   text-align: left;
   margin: 0;
   padding: 0;
 }
 .questionsgotwrong {
-  font-weight: 250;
+  font-size: 19px;
+  font-weight: 200;
   text-align: right;
   margin: 0;
   padding: 0;
+}
+#percentages {
+  position: relative;
+  top: 5rem;
 }
 /*            MOBILE & PC VIEW - RESPONSIVE SIDE          */
 
