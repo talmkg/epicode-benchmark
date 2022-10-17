@@ -1,5 +1,5 @@
 # Epicode Benchmark
-## Our team:
-<li>Leon</li>
-<li>Tim</li>
-<li>Cortney</li>
+<h3>Our team:</h3>
+  <li>Leon</li>
+  <li>Tim</li>
+  <li>Cortney</li>
