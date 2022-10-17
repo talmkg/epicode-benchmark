@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;900&family=Outfit:wght@100;200;300;400;700&display=swap");
+html {
+  background-image: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+body {
+  font-family: Outfit;
+  color: #e7e7eb;
+  width: 100%;
+}
+#topcontainer {
+  margin-left: 20%;
+  width: 55%;
+}
+#epicode {
+  width: 20%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+h1 {
+  font-weight: 300;
+  font-size: 60pt;
+  text-align: left;
+  margin-top: 0.2em;
+}
+h1 span {
+  display: block;
+  line-height: 0.2;
+  font-size: 60pt;
+}
+.bold {
+  font-weight: 700;
+}
+h2 {
+  color: #c2128d;
+  margin-bottom: 0.2em;
+  font-size: 23pt;
+}
+p {
+  font-family: inter;
+  font-weight: 300;
+  font-size: 16pt;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+ul {
+  font-family: inter;
+  font-weight: 300;
+  font-size: 16pt;
+  line-height: 1.5;
+  margin-bottom: 3em;
+}
+#info-container {
+  width: 75%;
+  margin-right: auto;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+button {
+  background-color: #00ffff;
+  border: none;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  font-weight: 700;
+  font-size: 18pt;
+}
+
+/* I think that the button has a box shadow after the box is checked... for now, it's on hover*/
+button:hover {
+  box-shadow: #00ffff 0px 0px 20px;
+}
+/*trying to style the checkbox...*/
+.text {
+  font-family: inter;
+  font-size: 16pt;
+  display: inline-block;
+}
+label > input[type="checkbox"] {
+  display: none;
+}
+label > input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+  width: 0.8rem;
+  height: 0.8rem;
+  padding: 0.1rem;
+  border: solid 1.5pt #e7e7eb;
+}
+
+label > input[type="checkbox"]:checked + *::before {
+  background-color: #e7e7eb;
+  color: white;
+  text-align: center;
+  padding: 0.1rem;
+}
