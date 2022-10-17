@@ -1,4 +1,8 @@
 # Epicode Benchmark
+### (Bootcamp's 1st Build Week Challenge)
+<p align="center">
+  <img src="https://media4.giphy.com/media/pdwbAAIpEqiKfdcCwv/giphy.gif?cid=ecf05e4711y8tpbhdbgvvmzwby1yy3c6u2flql0f7ulz6hev&rid=giphy.gif&ct=ts"/>
+</p>
 <h3>Our team:</h3>
 <ul>
   <li>Leon</li>
