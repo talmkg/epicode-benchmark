@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container">
-      <div id="logo"><img src="" /></div>
-      <h1 id="heading">Welcome To <span class="bold">Your Exam</span></h1>
-      <h3 id="instructions">Instructions</h3>
+    <div id="topcontainer">
+      <div id="logo"><img id="epicode" src="assets/epicode_logo.png" /></div>
+      <h1 id="heading">
+        Welcome to
+        <span class="bold">your exam</span>
+      </h1>
+      <h2 id="instructions">Instructions</h2>
       <p>
         We don't expect most engineers to know the answers to all of these
-        questions, so don't worry if you're unsure of a few of them
+        questions, so don't worry if you're unsure of a few of them.
       </p>
       <ul>
         <li>
@@ -28,13 +32,13 @@
           This exam will take approx. <span class="bold">0-5 minutes</span>
         </li>
       </ul>
-      <div id="proceed">
-        <input id="promise" type="checkbox" required />
-        <span class="bold"
-          >I promise to answer myself without help from anyone</span
-        >
-        <button id="proceed">Proceed</button>
-      </div>
+    </div>
+    <div id="proceed">
+      <input id="promise" type="checkbox" required />
+      <span class="bold"
+        >I promise to answer myself without help from anyone</span
+      >
+      <button id="proceed">Proceed</button>
     </div>
   </body>
 </html>
