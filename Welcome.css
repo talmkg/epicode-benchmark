@@ -83,6 +83,7 @@ button:hover {
 .glow {
   box-shadow: #00ffff 0px 0px 30px;
   color: #0b2e5a;
+  transition: box-shadow 0.2s ease-in-out;
 }
 /*trying to style the checkbox...*/
 .text {
