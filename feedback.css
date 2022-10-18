@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@200;400;600&display=swap");
+
 body {
   background-color: antiquewhite;
   margin: 0;
@@ -9,12 +10,12 @@ body {
 }
 #main-container {
   margin-inline: auto;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 #top-section {
   width: 100%;
-  margin-block: 3.125em;
+  margin-top: 2em;
 }
 #top-section img {
   width: 200px;
