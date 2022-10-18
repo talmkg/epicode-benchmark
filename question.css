@@ -11,7 +11,6 @@ body {
 #main-container {
   margin-inline: auto;
   max-width: 100%;
-  /* background-image: url(./assets/bg.jpg); */
   padding-block: 3.125em;
   padding-inline: 40px;
 }
@@ -30,7 +29,6 @@ body {
 #timer {
   position: relative;
   left: 90%;
-  /* transform: translateY(-159%); */
   border: solid 15px aqua;
   width: 100px;
   text-align: center;
@@ -64,7 +62,6 @@ body {
   margin-inline: 20px;
   background: rgb(11 16 59 / 62%);
   border-radius: 70px;
-  /* box-shadow: 0 4px 30px rgb(0 0 0 / 10%); */
   backdrop-filter: blur(310px);
   -webkit-backdrop-filter: blur(11.3px);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -89,19 +86,15 @@ body {
 }
 #answers-section {
   width: 70%;
-  /* border: solid; */
   margin-inline: auto;
   margin-block-start: 6em;
 }
 
 #top-line {
-  /* display: inline-block; */
   width: 100%;
-  /* margin: 37px; */
 }
 #bottom-line {
   display: inline-block;
-  /* margin: 37px; */
 }
 
 #question-counter {
@@ -116,16 +109,12 @@ body {
   background-image: linear-gradient(170deg, #ffffff 25%, #00a95000 90%);
   border-radius: 80px;
   box-sizing: border-box;
-  /* color: #00a84f; */
   display: inline-block;
   font: 1.125rem "Oswald", Arial, sans-serif;
   height: 99px;
   letter-spacing: 1px;
-  /* margin: 0 auto; */
   padding: 4px;
-  /* position: relative; */
   text-decoration: none;
-  /* text-transform: uppercase; */
   width: 507px;
   z-index: 1;
   margin-block-end: 40px;
@@ -145,9 +134,7 @@ body {
 
 .options:hover {
   background: linear-gradient(0deg, #900080, #d20094);
-  /* transition: 3s; */
 }
 .options:active {
   background: linear-gradient(0deg, #900080, #d20094);
-  /* transition: 3s; */
 }
