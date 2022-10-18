@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./question.css" />
+    <link rel="stylesheet" href="./game.css" />
     <title>Questions</title>
   </head>
   <body>
@@ -13,23 +14,34 @@
         <div id="logo"><img src="./assets/epicode_logo.png" alt="" /></div>
         <div id="timer"></div>
       </div>
-
-      <div id="bottom-section">
-        <div id="question-title"><span id="light">How can I create a</span> <span id="bold">checkbox in HTML</span></div>
-        <div id="answers-section">
-          <div id="top-line">
-            <button id="option1" class="options">Option1</button>
-            <button id="option2" class="options">Option2</button>
+      <!--      EXPERIMENTS      -->
+      <div id="game" class="justify-center flex-column">
+        <center>
+          <h1 id="question">What is the answer to this question?</h1>
+        </center>
+        <div id="top-line">
+          <!-- top buttons -->
+          <div class="choice-container">
+            <p class="choice-text" data-number="1">Choice 1</p>
           </div>
-          <div id="bottom-line">
-            <button id="option3" class="options">Option3</button>
-            <button id="option4" class="options">Option4</button>
+          <div class="choice-container">
+            <p class="choice-text" data-number="2">Choice 2</p>
           </div>
         </div>
-        <div id="question-counter">
-          <span id="question">QUESTION <span id="current-question"> 1 </span> <span class="total-question">/</span> <span id="total-question" class="total-question">10</span></span>
+        <div id="bottom-line">
+          <!-- bottom buttons -->
+          <div class="choice-container">
+            <p class="choice-text" data-number="3">Choice 3</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-text" data-number="4">Choice 4</p>
+          </div>
         </div>
       </div>
+      <div id="question-counter">
+        <p id="progressText" class="hud-prefix">Question</p>
+      </div>
     </div>
+    <script src="./question.js"></script>
   </body>
 </html>
