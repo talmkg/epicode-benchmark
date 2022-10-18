@@ -24,8 +24,7 @@ let questions = [
     answer: 2,
   },
   {
-    question:
-      "What is the most preferred image format used for logos in the Wikimedia database?",
+    question: "What is the most preferred image format used for logos?",
     choice1: ".png",
     choice2: ".jpeg",
     choice3: ".svg",
