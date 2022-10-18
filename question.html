@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./question.css" />
+
+
+    <link rel="stylesheet" href="./game.css" />
+
     <title>Questions</title>
   </head>
   <body>
@@ -40,5 +44,36 @@
         </div>
       </div>
     </div>
+
+      <!--      EXPERIMENTS      -->
+      <div id="game" class="justify-center flex-column">
+        <center>
+          <h1 id="question">What is the answer to this question?</h1>
+        </center>
+        <div id="top-line">
+          <!-- top buttons -->
+          <div class="choice-container">
+            <p class="choice-text" data-number="1">Choice 1</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-text" data-number="2">Choice 2</p>
+          </div>
+        </div>
+        <div id="bottom-line">
+          <!-- bottom buttons -->
+          <div class="choice-container">
+            <p class="choice-text" data-number="3">Choice 3</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-text" data-number="4">Choice 4</p>
+          </div>
+        </div>
+      </div>
+      <div id="question-counter">
+        <p id="progressText" class="hud-prefix">Question</p>
+      </div>
+    </div>
+    <script src="./question.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,154 @@
+/* ATTENTION! The following styling is used on all pages*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;900&family=Outfit:wght@100;200;300;400;700&display=swap");
+
+html {
+  background-image: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+body {
+  font-family: Outfit;
+  color: #e7e7eb;
+  width: 100%;
+  margin: 0;
+}
+
+#epicode {
+  width: 200px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/*ATTENTION!!! The following styling is used on the results page*/
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.toptext {
+  text-align: center;
+  line-height: 1px;
+  margin-bottom: 2em;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 60px;
+  margin-top: 0.2em;
+}
+
+h3 {
+  font-family: inter;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+/*this was already written... I am tweaking*/
+
+.results {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 1.5em;
+}
+#percentage1 {
+  padding-right: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 20%;
+}
+#percentage2 {
+  padding-left: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: right;
+  width: 20%;
+}
+.correct {
+  font-weight: 400;
+  display: inline-block;
+  text-align: left;
+}
+.wrong {
+  font-weight: 400;
+  display: inline-block;
+  opacity: 0.6;
+  text-align: right;
+}
+#circle {
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+  border: 30pt solid rgb(0, 238, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em;
+  text-align: center;
+}
+
+.cyantext {
+  color: cyan;
+}
+.results h4 {
+  text-align: center;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.results p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: 2px solid white;
+  transition: 0.5s;
+  margin-left: 43%;
+  margin-top: 1em;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #07d6dd91;
+  transition: transform 150ms;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+.results h2 {
+  margin: 0;
+  padding: 0;
+}
+.questiongotcorrect {
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.questionsgotwrong {
+  font-size: 19px;
+  font-weight: 200;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+#percentages {
+  position: relative;
+  top: 5rem;
+}
