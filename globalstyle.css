@@ -8,12 +8,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+  height: 100%;
 }
 
 body {
   font-family: Outfit;
   color: #e7e7eb;
   width: 100%;
+
   margin: 0;
 }
 
