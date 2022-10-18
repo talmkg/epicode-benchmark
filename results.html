@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results</title>
-    <link rel="stylesheet" href="./results.css" />
+    <link rel="stylesheet" href="globalstyle.css" />
   </head>
   <body>
-    <container class="container">
+    <div class="container">
       <div class="header">
-        <img class="logo" src="./assets/epicode_logo.png" />
+        <img id="epicode" src="./assets/epicode_logo.png" />
       </div>
       <div class="toptext">
-        <h4><strong>Results</strong><br />The summary of your answers:</h4>
+        <h1>Results</h1>
+          <h3>The summary of your answers:</h3>
       </div>
       <div class="results">
-        <div id="percentages">
+        <div id="percentage1">
           <h2 class="correct">Correct<br /><strong>66.7%</strong></h2>
           <h5 class="questiongotcorrect">4/6 questions</h5>
         </div>
@@ -28,12 +29,12 @@
             (including promotions / spam folder)
           </p>
         </div>
-        <div id="percentages">
+        <div id="percentage2">
           <h2 class="wrong">Wrong<br /><strong>33.3%</strong></h2>
           <h5 class="questionsgotwrong">2/6 questions</></h5>
         </div>
       </div>
       <a href="./feedback.html" class="btn"><strong>RATE US</strong></a>
-    </container>
+    </div>
   </body>
 </html>
