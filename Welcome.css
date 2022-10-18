@@ -53,7 +53,7 @@ ul {
   margin-bottom: 3em;
 }
 #info-container {
-  width: 75%;
+  width: 65%;
   margin-right: auto;
   margin-left: 20%;
   display: flex;
@@ -69,11 +69,17 @@ button {
   padding: 0.5em 1.5em 0.5em 1.5em;
   font-weight: 700;
   font-size: 18pt;
+  font-family: inter;
 }
 
 /* I think that the button has a box shadow after the box is checked... for now, it's on hover*/
 button:hover {
-  box-shadow: #00ffff 0px 0px 20px;
+  box-shadow: #00ffff 0px 0px 30px;
+  color: #0a294f;
+}
+.glow {
+  box-shadow: #00ffff 0px 0px 30px;
+  color: #0b2e5a;
 }
 /*trying to style the checkbox...*/
 .text {
@@ -82,7 +88,13 @@ button:hover {
   display: inline-block;
 }
 label > input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  visibility: hidden;
+  left: -5px;
+  top: 12px;
+  cursor: pointer;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 label > input[type="checkbox"] + *::before {
   content: "";
