@@ -89,7 +89,7 @@ button:hover {
 }
 label > input[type="checkbox"] {
   position: absolute;
-  opacity: 1%;
+  visibility: hidden;
   left: -5px;
   top: 12px;
   cursor: pointer;
