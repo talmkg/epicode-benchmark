@@ -27,7 +27,7 @@ body {
   margin-top: 0.2em;
   margin-bottom: 1.2em;
 }
-h1 span {
+#heading span {
   display: block;
   line-height: 0.2;
   font-size: 60pt;
@@ -74,10 +74,12 @@ button {
 }
 
 /* I think that the button has a box shadow after the box is checked... for now, it's on hover*/
+/*I don't think that I need this now that JS is in place
 button:hover {
   box-shadow: #00ffff 0px 0px 30px;
   color: #0a294f;
-}
+}*/
+
 .glow {
   box-shadow: #00ffff 0px 0px 30px;
   color: #0b2e5a;
