@@ -30,7 +30,8 @@ body {
 }
 .toptext {
   text-align: center;
-  line-height: 1em;
+  line-height: 1px;
+  margin-bottom: 2em;
 }
 
 h1 {
@@ -41,7 +42,7 @@ h1 {
 
 h3 {
   font-family: inter;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 30px;
 }
 
@@ -52,6 +53,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  margin-top: 1.5em;
 }
 #percentage1 {
   padding-right: 0.5em;
@@ -88,6 +90,7 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   padding: 2em;
+  text-align: center;
 }
 
 .cyantext {
@@ -96,30 +99,27 @@ h3 {
 .results h4 {
   text-align: center;
   font-weight: 600;
-  margin: 0;
   padding: 0;
-}
-.results h4 {
-  font-size: 23px;
   margin: 0;
+  font-size: 20px;
 }
+
 .results p {
   font-family: "Inter", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 300;
 }
+
 .btn {
   font-size: 2rem;
   padding: 0.8rem 2rem;
-  width: 200px;
-  height: auto;
-  top: 15rem;
-  position: relative;
   text-decoration: none;
   color: rgb(255, 255, 255);
   background: transparent;
   border: 2px solid white;
   transition: 0.5s;
+  margin-left: 43%;
+  margin-top: 1em;
 }
 .btn:hover {
   cursor: pointer;
