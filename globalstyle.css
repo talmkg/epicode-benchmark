@@ -61,6 +61,7 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   justify-content: left;
+  width: 20%;
 }
 #percentage2 {
   padding-left: 0.5em;
@@ -68,6 +69,7 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   justify-content: right;
+  width: 20%;
 }
 .correct {
   font-weight: 400;
