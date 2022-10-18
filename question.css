@@ -40,13 +40,6 @@ body {
   display: inline-block;
 }
 
-#bottom-section {
-  margin-inline: auto;
-  width: 100%;
-  text-align: center;
-  color: aliceblue;
-}
-
 #question-title {
   font-size: 4.4em;
   margin-block-end: 50px;
@@ -88,12 +81,6 @@ body {
 #option4 {
   margin-inline-end: 0;
 }
-#answers-section {
-  width: 1045px;
-  /* border: solid; */
-  margin-inline: auto;
-  margin-block-start: 100px;
-}
 
 #top-line {
   display: inline-block;
@@ -123,7 +110,7 @@ body {
   color: #d20094;
 }
 
-.options:hover {
+.choice-container:hover {
   background: linear-gradient(0deg, #900080, #d20094);
   /* transition: 3s; */
 }
@@ -131,3 +118,5 @@ body {
   background: linear-gradient(0deg, #900080, #d20094);
   transition: 3s;
 }
+
+/*                CSS FOR TIM'S JS FUNCTIONALITY            */
