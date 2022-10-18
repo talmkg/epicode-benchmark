@@ -6,3 +6,13 @@ const addBoxShadow = (event) => {
   button.classList.toggle("glow");
 };
 input.addEventListener("click", addBoxShadow);
+
+//want to stop user from moving on without checking the box.
+const isChecked = (event) => {
+  if (input.checked === false) {
+    event.preventDefault();
+    alert("please check the box");
+  }
+};
+
+button.addEventListener("click", isChecked);
