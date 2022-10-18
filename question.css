@@ -12,7 +12,7 @@ body {
   margin-inline: auto;
   max-width: 100%;
   /* background-image: url(./assets/bg.jpg); */
-  padding-block: 90px;
+  padding-block: 3.125em;
   padding-inline: 40px;
 }
 
@@ -24,7 +24,7 @@ body {
 #top-section {
   margin-inline: auto;
   height: 150px;
-  width: 1045px;
+  width: 70%;
 }
 
 #timer {
@@ -48,10 +48,9 @@ body {
 }
 
 #question-title {
-  font-size: 4.4em;
-  margin-block-end: 50px;
-  margin-block-start: 60px;
-  width: 801px;
+  font-size: 60px;
+  margin-block-end: 1em;
+  width: 700px;
   margin-inline: auto;
   font-family: "Outfit", sans-serif;
 }
@@ -59,18 +58,14 @@ body {
 .options {
   width: 500px;
   height: 90px;
-  /* border-radius: 50px; */
   text-align: center;
-  font-size: 1.2em;
-  /* border: solid 1px white; */
-  /* background: transparent; */
-  /* opacity: 0.4; */
+  font-size: 16px;
   color: white;
   margin-inline: 20px;
-  background: rgba(255, 255, 255, 0.22);
+  background: rgb(11 16 59 / 62%);
   border-radius: 70px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-  backdrop-filter: blur(100px);
+  /* box-shadow: 0 4px 30px rgb(0 0 0 / 10%); */
+  backdrop-filter: blur(310px);
   -webkit-backdrop-filter: blur(11.3px);
   border: 2px solid rgba(255, 255, 255, 0.2);
   margin-inline-start: 0;
@@ -80,23 +75,28 @@ body {
 
 #option1 {
   margin-block-end: 40px;
+  margin-inline-end: 20px;
 }
 #option2 {
-  margin-inline-end: 0;
+  margin-inline-start: 20px;
   margin-block-end: 40px;
 }
+#option3 {
+  margin-inline-end: 20px;
+}
 #option4 {
-  margin-inline-end: 0;
+  margin-inline-start: 20px;
 }
 #answers-section {
-  width: 1045px;
+  width: 70%;
   /* border: solid; */
   margin-inline: auto;
-  margin-block-start: 100px;
+  margin-block-start: 6em;
 }
 
 #top-line {
-  display: inline-block;
+  /* display: inline-block; */
+  width: 100%;
   /* margin: 37px; */
 }
 #bottom-line {
@@ -106,10 +106,30 @@ body {
 
 #question-counter {
   margin-inline: auto;
-  margin-block-start: 150px;
-  margin-block-end: 20px;
-  font-size: 1.7em;
+  margin-block-start: 3em;
+  font-size: 1.3em;
   font-weight: 600;
+  font-family: "Outfit", sans-serif;
+}
+
+.first-div {
+  background-image: linear-gradient(170deg, #ffffff 25%, #00a95000 90%);
+  border-radius: 80px;
+  box-sizing: border-box;
+  /* color: #00a84f; */
+  display: inline-block;
+  font: 1.125rem "Oswald", Arial, sans-serif;
+  height: 99px;
+  letter-spacing: 1px;
+  /* margin: 0 auto; */
+  padding: 4px;
+  /* position: relative; */
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  width: 507px;
+  z-index: 1;
+  margin-block-end: 40px;
+  margin-inline-start: 10px;
 }
 
 #light {
