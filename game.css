@@ -5,10 +5,10 @@ body {
 }
 .choice-container {
   width: 500px;
-  height: 90px;
+  height: 85px;
   /* border-radius: 50px; */
   text-align: center;
-  font-size: 1.2em;
+  font-size: 16px;
   /* border: solid 1px white; */
   /* background: transparent; */
   /* opacity: 0.4; */
@@ -23,11 +23,10 @@ body {
   margin-inline-start: 0;
   cursor: pointer;
   font-family: "Inter", sans-serif;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 .choice-text {
   padding: 1rem;
-  width: 100%;
   text-align: center;
 }
 #hud {
@@ -35,8 +34,10 @@ body {
   justify-content: space-between;
 }
 .hud-prefix {
-  text-align: center;
-  font-size: 2rem;
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-inline-start: 30px;
 }
 .hud-main-text {
   text-align: center;
