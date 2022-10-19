@@ -159,6 +159,7 @@ h3 {
 /*this was already written... I am tweaking*/
 
 .results {
+  position: relative;
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -192,18 +193,31 @@ h3 {
   opacity: 0.6;
   text-align: right;
 }
+
 #circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   border-radius: 50%;
   width: 425px;
   height: 425px;
   background-image: conic-gradient(#c2128d 33.3%, #00ffff 33.3%);
   box-shadow: #0a0f31 0px 0px 30px;
+  animation: rotate 1s linear;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #circle-filter {
   position: absolute;
-  top: 11.1%;
-  left: 11.1%;
   background-image: url(/assets/bg.jpg);
   background-position: 720px;
   border-radius: 50%;
