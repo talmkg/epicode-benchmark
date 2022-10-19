@@ -6,48 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./question.css" />
     <link rel="stylesheet" href="./game.css" />
+    <link rel="stylesheet" href="./timer.css" />
     <title>Questions</title>
   </head>
   <body>
     <div id="main-container">
       <div id="top-section">
         <div id="logo"><img src="./assets/epicode_logo.png" alt="" /></div>
-        <div id="timer"></div>
+        <div class="grid">
+          <p class="base-timer__label" id="uppertext">Seconds</p>
+          <p class="base-timer__label" id="bottomtext">Remaining</p>
+          <div id="app"></div>
+        </div>
       </div>
       <!--      EXPERIMENTS      -->
       <div id="game" class="justify-center flex-column">
         <center>
           <h1 id="question">What is the answer to this question?</h1>
         </center>
-        <div id="answers-options">
-          <div id="top-line">
-            <!-- top buttons -->
-            <div class="choice-container">
-              <p class="choice-text" data-number="1">Choice 1</p>
-            </div>
-            <div class="choice-container">
-              <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
+        <div id="top-line">
+          <!-- top buttons -->
+          <div class="choice-container">
+            <p class="choice-text" data-number="1">Choice 1</p>
           </div>
-
-          <div id="bottom-line">
-            <!-- bottom buttons -->
-            <div class="choice-container">
-              <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="choice-container">
-              <p class="choice-text" data-number="4">Choice 4</p>
-            </div>
+          <div class="choice-container">
+            <p class="choice-text" data-number="2">Choice 2</p>
+          </div>
+        </div>
+        <div id="bottom-line">
+          <!-- bottom buttons -->
+          <div class="choice-container">
+            <p class="choice-text" data-number="3">Choice 3</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-text" data-number="4">Choice 4</p>
           </div>
         </div>
       </div>
       <div id="question-counter">
         <p id="progressText" class="hud-prefix">Question</p>
       </div>
-      <div id="next-btn">
-        <button id="next">Next→</button>
-      </div>
     </div>
     <script src="./question.js"></script>
+    <script src="./timer.js"></script>
   </body>
 </html>
