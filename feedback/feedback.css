@@ -3,7 +3,7 @@
 body {
   background-color: antiquewhite;
   margin: 0;
-  background-image: url(./assets/bg.jpg);
+  background-image: url(../assets/bg.jpg);
   background-size: cover;
   font-family: "Outfit", sans-serif;
   /* font-family: "Inter", sans-serif; */
