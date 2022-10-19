@@ -204,7 +204,7 @@ h3 {
   position: absolute;
   top: 11.1%;
   left: 11.1%;
-  background-image: url(/assets/bg.jpg);
+  background: #0c113b;
   background-position: 720px;
   border-radius: 50%;
   width: 210px;
