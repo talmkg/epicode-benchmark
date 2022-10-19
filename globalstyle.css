@@ -197,7 +197,7 @@ h3 {
   border-radius: 50%;
   width: 425px;
   height: 425px;
-  background-image: conic-gradient(#c2128d 33.3%, #00ffff 33.3%);
+  background: conic-gradient(#c2128d 33.3%, #00ffff 33.3%);
   box-shadow: #0a0f31 0px 0px 30px;
 }
 #circle-filter {
