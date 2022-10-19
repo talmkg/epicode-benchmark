@@ -137,9 +137,11 @@ document.getElementById("app").innerHTML = `
   )}</span>
 </div>
 `;
-
 function onTimesUp() {
-  clearInterval(timerInterval);
+  //clearInterval(timerInterval);
+  timePassed = 0;
+  timeLeft = TIME_LIMIT;
+  timerInterval = null;
 }
 
 function startTimer() {
@@ -154,6 +156,8 @@ function startTimer() {
     if (timeLeft === 0) {
       onTimesUp();
       getNewQuestion();
+      timeLeft = TIME_LIMIT;
+      return timeLeft;
     }
   }, 1000);
 }
