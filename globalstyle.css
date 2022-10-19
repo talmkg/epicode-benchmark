@@ -193,16 +193,29 @@ h3 {
   text-align: right;
 }
 #circle {
+  position: relative;
+  border-radius: 50%;
+  width: 425px;
+  height: 425px;
+  background-image: conic-gradient(#c2128d 33.3%, #00ffff 33.3%);
+  box-shadow: #0a0f31 0px 0px 30px;
+}
+#circle-filter {
+  position: absolute;
+  top: 11.1%;
+  left: 11.1%;
+  background-image: url(/assets/bg.jpg);
+  background-position: 720px;
   border-radius: 50%;
   width: 210px;
   height: 210px;
-  border: 30pt solid rgb(0, 238, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 2em;
   text-align: center;
+  box-shadow: inset #0a0f31 0px 0px 30px;
 }
 
 .cyantext {
@@ -218,7 +231,7 @@ h3 {
 
 .results p {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
 }
 
