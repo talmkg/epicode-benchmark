@@ -1,17 +1,21 @@
 /* ATTENTION! The following styling is used on all pages*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;900&family=Outfit:wght@100;200;300;400;700&display=swap");
+@media only screen and (max-width: 600px) {
+}
 
 html {
   background-image: url(/assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+  height: 100%;
 }
 
 body {
   font-family: Outfit;
   color: #e7e7eb;
   width: 100%;
+
   margin: 0;
 }
 
@@ -52,7 +56,7 @@ h3 {
   font-size: 30px;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-top: 1.5em;
 }
 #percentage1 {
@@ -114,13 +118,13 @@ h3 {
 
 .btn {
   font-size: 2rem;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 3.5rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
   background: transparent;
   border: 2px solid white;
   transition: 0.5s;
-  margin-left: 43%;
+  position: relative;
   margin-top: 1em;
 }
 .btn:hover {
@@ -151,4 +155,9 @@ h3 {
 #percentages {
   position: relative;
   top: 5rem;
+}
+#aligning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
