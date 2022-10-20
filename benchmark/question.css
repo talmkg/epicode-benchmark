@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@200;400;600&display=swap");
+html {
+  margin: 0;
+}
 body {
   margin: 0;
   background-image: url(../assets/bg.jpg);
@@ -8,19 +11,29 @@ body {
 }
 
 #main-container {
-  margin-inline: auto;
-  max-width: 70%;
-  margin-block: 3.125em;
+  margin-left: 10%;
+  max-width: 80%;
 }
 
 #top-section img {
   width: 200px;
-  margin-inline: auto;
 }
 
 #top-section {
+  display: flex;
+  justify-content: space-between;
   margin-inline: auto;
   width: 100%;
+  margin-top: 2em;
+}
+#timer-box {
+  position: relative;
+  margin-right: 10%;
+}
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #timer {
@@ -34,6 +47,11 @@ body {
   border-radius: 50%;
   display: inline-block;
 }
+
+#game {
+  margin-top: 6em;
+}
+
 h1 {
   font-size: 30px;
   font-weight: 500;
@@ -105,16 +123,21 @@ center {
 
 #question-counter {
   margin-inline: auto;
+  width: 100%;
   margin-block-start: 150px;
   margin-block-end: 20px;
   font-size: 1.7em;
   font-weight: 600;
 }
 
+#button-box {
+  display: flex;
+  justify-content: right;
+  margin-top: 2em;
+  width: 100%;
+}
+
 #next-btn {
-  position: relative;
-  left: 57em;
-  bottom: 4em;
   width: 160px;
   height: 50px;
 }

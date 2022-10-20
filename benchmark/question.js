@@ -76,7 +76,8 @@ choices.forEach((choice) => {
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
 
-    let classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+    let classToApply =
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
     selectedChoice.parentElement.classList.add(classToApply);
 
@@ -131,7 +132,9 @@ document.getElementById("app").innerHTML = `
       ></path>
     </g>
   </svg>
-  <span id="base-timer-label" class="base-timer__label">${formatTime(timeLeft)}</span>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(
+    timeLeft
+  )}</span>
 </div>
 `;
 function onTimesUp() {
@@ -145,7 +148,8 @@ function startTimer() {
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
+    document.getElementById("base-timer-label").innerHTML =
+      formatTime(timeLeft);
     setCircleDasharray();
     setRemainingPathColor(timeLeft);
 
@@ -172,11 +176,19 @@ function formatTime(time) {
 function setRemainingPathColor(timeLeft) {
   const { alert, warning, info } = COLOR_CODES;
   if (timeLeft <= alert.threshold) {
-    document.getElementById("base-timer-path-remaining").classList.remove(warning.color);
-    document.getElementById("base-timer-path-remaining").classList.add(alert.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(warning.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(alert.color);
   } else if (timeLeft <= warning.threshold) {
-    document.getElementById("base-timer-path-remaining").classList.remove(info.color);
-    document.getElementById("base-timer-path-remaining").classList.add(warning.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(info.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(warning.color);
   }
 }
 
@@ -186,8 +198,12 @@ function calculateTimeFraction() {
 }
 
 function setCircleDasharray() {
-  const circleDasharray = `${(calculateTimeFraction() * FULL_DASH_ARRAY).toFixed(0)} 283`;
-  document.getElementById("base-timer-path-remaining").setAttribute("stroke-dasharray", circleDasharray);
+  const circleDasharray = `${(
+    calculateTimeFraction() * FULL_DASH_ARRAY
+  ).toFixed(0)} 283`;
+  document
+    .getElementById("base-timer-path-remaining")
+    .setAttribute("stroke-dasharray", circleDasharray);
 }
 startTimer();
 
