@@ -1,3 +1,7 @@
+/*This page is ready to receive values from the questions page. 
+The only values that this page needs to function are the score and the maxPoints.
+These values must be integers.*/
+
 //laying out how scores will be calculated
 
 //made up value for now
