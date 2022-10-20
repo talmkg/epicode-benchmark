@@ -1,9 +1,9 @@
 //laying out how scores will be calculated
 
 //made up value for now
-let score = 4;
+let score = 36;
 //max Points would also need to be grabbed from questions JS if the questions were to ever increase
-const maxPoints = 6;
+const maxPoints = 40;
 
 const percentCorrect = parseFloat((score / maxPoints) * 100);
 const percentWrong = parseFloat(100 - percentCorrect);
@@ -22,3 +22,18 @@ inputWrong.value = percentWrong.toFixed(1);
 
 //this piece of code adds the calculation to the screen in the form of a pie chart
 circle.style.backgroundImage = `conic-gradient(#00ffff ${percentCorrect}%, #c2128d ${percentCorrect}%)`;
+
+// calculating number of questions
+
+const numOfQuestions = maxPoints;
+const numOfCorrect = score;
+const numOfWrong = maxPoints - score;
+const words = " questions";
+// checking what I wrote... it works!!!
+console.log(`${numOfWrong} " out of " ${numOfQuestions}`);
+// Now I need the page to display these in the correct place
+const displayRight = document.getElementById("theseAreright");
+const displayWrong = document.getElementById("theseAreWrong");
+
+displayRight.innerText = `${numOfCorrect}/${numOfQuestions} ${words}`;
+displayWrong.innerText = `${numOfWrong}/${numOfQuestions} ${words}`;
