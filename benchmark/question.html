@@ -27,30 +27,31 @@
         <div id="choice-box">
           <!-- top buttons -->
           <div class="choice-container">
-            <p class="choice-text" value="1">Choice 1</p>
+            <p class="choice-text" data-number="1">Choice 1</p>
           </div>
           <div class="choice-container">
-            <p class="choice-text" value="2">Choice 2</p>
+            <p class="choice-text" data-number="2">Choice 2</p>
           </div>
           <!-- bottom buttons -->
           <div class="choice-container">
-            <p class="choice-text" value="3">Choice 3</p>
+            <p class="choice-text" data-number="3">Choice 3</p>
           </div>
           <div class="choice-container">
-            <p class="choice-text" value="4">Choice 4</p>
+            <p class="choice-text" data-number="4">Choice 4</p>
           </div>
         </div>
       </div>
-      <div id="button-box">
-        <div id="next-btn">
-          <button id="next">Next</button>
+      <span>
+        <div id="question-counter">
+          <p id="progressText" class="hud-prefix">Question</p>
         </div>
-      </div>
-      <div id="question-counter">
-        <p id="progressText" class="hud-prefix">Question</p>
-      </div>
+        <div id="button-box">
+          <div id="next-btn">
+            <button id="next">Next</button>
+          </div>
+        </div>
+      </span>
     </div>
     <script src="../benchmark/question.js"></script>
-    <script src="../benchmark/timer.js"></script>
   </body>
 </html>
