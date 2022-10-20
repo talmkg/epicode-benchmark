@@ -32,7 +32,7 @@
   stroke-width: 9px;
   transform: rotate(90deg);
   transform-origin: center;
-  transition: 1s linear all;
+  transition: 0.2s linear all;
   fill-rule: nonzero;
   stroke: currentColor;
 }
