@@ -11,6 +11,14 @@ const percentWrong = parseFloat(100 - percentCorrect);
 console.log(percentCorrect);
 //choosing elements to work with
 const circle = document.getElementById("circle");
+const inputCorrect = document.getElementById("inputCorrect");
+const inputWrong = document.getElementById("inputWrong");
+
+//this code displays the dynamic value of the correct percentage
+inputCorrect.value = percentCorrect.toFixed(2);
+
+//this code displays the dynamic value of the wrong percentatge
+inputWrong.value = percentWrong.toFixed(2);
 
 //this piece of code adds the calculation to the screen in the form of a pie chart
 circle.style.backgroundImage = `conic-gradient(#00ffff ${percentCorrect}%, #c2128d ${percentCorrect}%)`;

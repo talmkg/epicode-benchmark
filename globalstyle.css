@@ -166,6 +166,18 @@ h3 {
   align-items: center;
   margin-top: 1.5em;
 }
+
+.percent-box {
+  background-color: transparent;
+  color: #e7e7eb;
+  border: none;
+  font-size: 30pt;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  padding-right: 0.2em;
+}
+
 #percentage1 {
   padding-right: 0.5em;
   display: flex;
