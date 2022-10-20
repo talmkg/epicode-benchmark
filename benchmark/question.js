@@ -143,7 +143,6 @@ function onTimesUp() {
   timeLeft = TIME_LIMIT;
   timerInterval = null;
 }
-
 function startTimer() {
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
@@ -156,8 +155,6 @@ function startTimer() {
     if (timeLeft === 0) {
       onTimesUp();
       getNewQuestion();
-      timeLeft = TIME_LIMIT;
-      return timeLeft;
     }
   }, 1000);
 }
@@ -212,3 +209,10 @@ next.addEventListener("click", () => {
   getNewQuestion();
   onTimesUp();
 });
+
+if (getNewQuestion()) {
+  //clearInterval(timerInterval);
+  timePassed = 0;
+  timeLeft = TIME_LIMIT;
+  timerInterval = null;
+}
