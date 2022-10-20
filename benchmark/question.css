@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@200;400;600&display=swap");
 html {
   margin: 0;
+  width: 100vw;
 }
 body {
   margin: 0;
   background-image: url(../assets/bg.jpg);
   background-size: cover;
   font-family: "Outfit", sans-serif;
+  width: 100%;
   /* font-family: "Inter", sans-serif; */
 }
 
 #main-container {
-  margin-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 80%;
 }
 
@@ -50,12 +53,14 @@ body {
 
 #game {
   margin-top: 6em;
+  width: 100%;
 }
 
 h1 {
   font-size: 30px;
   font-weight: 500;
-  width: 70%;
+  width: 100%;
+  text-align: center;
 }
 
 center {
@@ -79,28 +84,6 @@ center {
   font-family: "Outfit", sans-serif;
 }
 
-.options {
-  width: 500px;
-  height: 90px;
-  /* border-radius: 50px; */
-  text-align: center;
-  font-size: 1.2em;
-  /* border: solid 1px white; */
-  /* background: transparent; */
-  /* opacity: 0.4; */
-  color: white;
-  margin-inline: 20px;
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 70px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(11.3px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  margin-inline-start: 0;
-  cursor: pointer;
-  font-family: "Inter", sans-serif;
-}
-
 #option1 {
   margin-block-end: 40px;
 }
@@ -112,20 +95,18 @@ center {
   margin-inline-end: 0;
 }
 
-#top-line {
-  display: inline-block;
-  /* margin: 37px; */
-}
-#bottom-line {
-  display: inline-block;
-  /* margin: 37px; */
+#choice-box {
+  padding: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #question-counter {
-  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
   width: 100%;
-  margin-block-start: 150px;
-  margin-block-end: 20px;
   font-size: 1.7em;
   font-weight: 600;
 }
@@ -133,7 +114,6 @@ center {
 #button-box {
   display: flex;
   justify-content: right;
-  margin-top: 2em;
   width: 100%;
 }
 
