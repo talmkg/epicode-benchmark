@@ -87,16 +87,18 @@ input {
   margin-inline: auto;
 }
 
-.inactive img {
-  filter: hue-rotate(182deg) opacity(0.2);
+.inactive-star {
+  filter: brightness(0.1);
+  cursor: pointer;
+  filter: hue-rotate(182deg) opacity(0.3);
 }
 
-.inactive img:hover {
-  filter: hue-rotate(0deg) opacity(1);
-  transition: 0.3s;
+.inactive-star:hover {
+  filter: brightness(1);
 }
-.inactive img:active {
-  filter: hue-rotate(0deg) opacity(1);
+
+.inactive-star.selected {
+  filter: brightness(1);
 }
 
 #stars img {
