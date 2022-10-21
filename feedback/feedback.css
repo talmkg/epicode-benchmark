@@ -27,6 +27,7 @@ body {
   margin-inline: auto;
   width: 100%;
   text-align: center;
+  margin-block: 120px;
 }
 
 #title {
@@ -35,7 +36,7 @@ body {
 }
 #title-description {
   font-size: 1.8em;
-  margin-block-end: 30px;
+  margin-block: 30px;
   width: 815px;
   margin-inline: auto;
   font-weight: 100;

@@ -36,12 +36,12 @@ body {
   font-weight: 300;
   font-size: 60px;
   text-align: left;
-  margin-top: 0.2em;
+  margin-top: 1.5em;
   margin-bottom: 1.2em;
 }
 #heading span {
   display: block;
-  line-height: 0.2;
+  line-height: 0.5;
   font-size: 60pt;
 }
 .bold {
@@ -147,13 +147,14 @@ label > input[type="checkbox"]:checked + *::before {
 h1 {
   font-weight: 900;
   font-size: 60px;
-  margin-top: 0.2em;
+  margin-top: 100px;
 }
 
 h3 {
-  font-family: inter;
   font-weight: 300;
   font-size: 30px;
+  margin-block-end: 80px;
+  margin-block-start: 50px;
 }
 
 /*this was already written... I am tweaking*/
@@ -164,7 +165,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5em;
+  margin-block: 1.5em;
 }
 
 .percent-box {
@@ -258,7 +259,7 @@ h3 {
 
 .results p {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 
