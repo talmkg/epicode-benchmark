@@ -1,9 +1,11 @@
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.querySelector("#progressText");
+const scoreText = document.querySelector("#score");
 
 let currentQuestion = {};
 let acceptingAnswers = true;
+let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 let questions = [
@@ -40,6 +42,7 @@ let questions = [
     answer: 2,
   },
 ];
+const SCORE_POINTS = 1;
 const MAX_QUESTIONS = 4;
 startGame = () => {
   questionCounter = 0;
@@ -50,7 +53,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("../results/results.html");
+    return window.location.assign("../results/results.html?score=" + score);
   }
   questionCounter++;
   progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
@@ -78,7 +81,9 @@ choices.forEach((choice) => {
 
     let classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-
+    if (classToApply === "correct") {
+      incrementScore(SCORE_POINTS);
+    }
     selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
@@ -87,7 +92,10 @@ choices.forEach((choice) => {
     }, 100);
   });
 });
-
+incrementScore = (num) => {
+  score += num;
+  //scoreText.innerText = score;
+};
 startGame();
 
 const FULL_DASH_ARRAY = 283;
