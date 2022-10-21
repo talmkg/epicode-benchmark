@@ -209,10 +209,3 @@ next.addEventListener("click", () => {
   getNewQuestion();
   onTimesUp();
 });
-
-if (getNewQuestion()) {
-  //clearInterval(timerInterval);
-  timePassed = 0;
-  timeLeft = TIME_LIMIT;
-  timerInterval = null;
-}
