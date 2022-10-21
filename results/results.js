@@ -5,7 +5,7 @@ These values must be integers.*/
 //laying out how scores will be calculated
 
 //made up value for now
-let score = 3;
+
 //max Points would also need to be grabbed from questions JS ------------- DONE
 const maxPoints = MAX_QUESTIONS;
 
