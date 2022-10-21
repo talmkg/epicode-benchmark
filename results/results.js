@@ -3,7 +3,7 @@ The only values that this page needs to function are the score and the maxPoints
 These values must be integers.*/
 
 //laying out how scores will be calculated
-const query = new URLSearchParams(windows.location.search).get("score");
+const score = new URLSearchParams(window.location.search).get("score");
 //made up value for now
 
 //max Points would also need to be grabbed from questions JS ------------- DONE
