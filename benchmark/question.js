@@ -42,7 +42,7 @@ let questions = [
     answer: 2,
   },
 ];
-const SCORE_POINTS = 100;
+const SCORE_POINTS = 1;
 const MAX_QUESTIONS = 4;
 startGame = () => {
   questionCounter = 0;
@@ -53,7 +53,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("../results/results.html");
+    return window.location.assign("../results/results.html?score=" + score);
   }
   questionCounter++;
   progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
@@ -94,7 +94,7 @@ choices.forEach((choice) => {
 });
 incrementScore = (num) => {
   score += num;
-  scoreText.innerText = score;
+  //scoreText.innerText = score;
 };
 startGame();
 
